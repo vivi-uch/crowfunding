@@ -37,7 +37,7 @@ function Navbar() {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50">
-          <div className="bg-white w-11/12 absolute rounded-lg shadow-lg top-12 left-3">
+          <div className="bg-white w-11/12 absolute rounded-lg shadow-lg top-16 left-3">
             <nav className="flex flex-col gap-2 font-semibold p-4">
               {navItems.map((item) => (
                 <a
@@ -57,3 +57,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//About this navbar next time you come to it why not make
+// a different nav section entirely for laptop and for mobile
+// since crowfund logo is still showing with no opacity so that
+//  the x button would just be close to it and it can serve it's
+// onclick purpose
