@@ -37,7 +37,10 @@ function Info() {
         ))}
       </div>
       {/* my default range value for now */}
-      <input type="range" min={0} max={100} value={69} />
+      {/* <input type="range" min={0} max={100} value={69} /> */}
+      <div className="relative w-full rounded-full h-2 bg-gray-300">
+        <span className="w-5/6 absolute top-0 rounded-full h-2 bg-[#3DB5AB]"></span>
+        </div>
     </div>
   );
 }
