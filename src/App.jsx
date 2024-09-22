@@ -2,6 +2,7 @@ import MasterCraft from "./components/MasterCraft";
 import Navbar from "./components/Navbar";
 import Info from "./components/Info";
 import Project from "./components/Project";
+// import ExpandableCard from "./components/Expand";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <MasterCraft />
         <Info />
         <Project />
+        {/* <ExpandableCard /> */}
+        {/* check how to collapse and all with framer */}
       </div>
     </div>
   );
