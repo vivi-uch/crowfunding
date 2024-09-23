@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ function Navbar() {
         transition={{
           duration: 0.8,
         }}
-        className="relative lg:bg-[url(images/image-hero-desktop.jpg)] bg-[url(images/image-hero-mobile.jpg)] h-52 lg:h-72 bg-cover"
+        className="relative bg-[url('/images/image-hero-mobile.jpg')] lg:bg-[url('/images/image-hero-desktop.jpg')] h-52 lg:h-72 bg-cover"
       >
         <motion.nav className="justify-between flex items-start p-4 lg:py-16 lg:px-40">
           <motion.img
