@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,13 +46,15 @@ function Navbar() {
             // className="relative hidden lg:flex lg:gap-10 lg:text-lg lg:text-white font-semibold "
           >
             {navItems.map((item) => (
-              <a
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
                 key={item.label}
                 href={item.href}
                 className="lg:text-white lg:font-semibold"
               >
                 {item.label}
-              </a>
+              </motion.a>
             ))}
           </motion.li>
 

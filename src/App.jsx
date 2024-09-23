@@ -14,6 +14,7 @@ function App() {
         <Project />
         {/* <ExpandableCard /> */}
         {/* check how to collapse and all with framer */}
+        <p className="text-ModerateCyan text-sm mb-2">coded by vivian</p>
       </div>
     </div>
   );

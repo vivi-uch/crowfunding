@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "./Cards";
+import { motion } from "framer-motion";
 
 function Project() {
   const CardList = [
@@ -38,7 +39,12 @@ function Project() {
   };
 
   return (
-    <div className="p-8 flex flex-col text-DarkGray shadow-lg gap-6 font-light text-sm">
+    <motion.div
+      initial={{ marginTop: "100px" }}
+      animate={{ marginTop: "6px" }}
+      transition={{ duration: 1.8 }}
+      className="p-8 flex flex-col text-DarkGray shadow-2xl gap-6 font-light text-sm mb-2"
+    >
       <h1 className="text-black font-bold text-lg"> About this project</h1>
       <p>
         The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
@@ -64,7 +70,7 @@ function Project() {
           handleClick={handleClick}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 
